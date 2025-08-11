@@ -1,0 +1,2 @@
+# Java-Tutorials---Codes
+This repository contains a curated collection of Java tutorials and example code for beginners and intermediate developers. Each tutorial covers core Java concepts with simple explanations and hands-on code examples. Whether you're just starting out or brushing up your skills, this repository is a helpful resource for learning Java programming in a structured and practical way.
