@@ -8,13 +8,19 @@ public class Student {
     private int rno;
     double percent;
 
+    public Student(String naam,int roll,double per)
+    {
+      name=naam;
+      rno=roll;
+      percent=per;
+    }
     public int getRno()
     {
         return rno;
          
     }
-    public void setRno(int rno)
-    {
-        this.rno=rno;
-    }
+    // public void setRno(int rno)
+    // {
+    //     this.rno=rno;
+    // }
 }
