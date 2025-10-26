@@ -1,8 +1,8 @@
 public class InsertionSort {
     public static void printArray(int a[]) {
         int n = a.length;
-        for (int i = 0; i <= n; i++) {
-            System.out.println(a[i] + " ");
+        for (int i = 0; i < n; i++) {
+            System.out.print(a[i] + " ");
         }
         System.out.println();
     }

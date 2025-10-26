@@ -6,6 +6,69 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Transpose",
+            "request": "launch",
+            "mainClass": "Transpose",
+            "projectName": "Java Tutorials & Codes_f681357b"
+        },
+        {
+            "type": "java",
+            "name": "half_pyramid",
+            "request": "launch",
+            "mainClass": "half_pyramid",
+            "projectName": "Java Tutorials & Codes_f681357b"
+        },
+        {
+            "type": "java",
+            "name": "invHP",
+            "request": "launch",
+            "mainClass": "invHP",
+            "projectName": "Java Tutorials & Codes_f681357b"
+        },
+        {
+            "type": "java",
+            "name": "invhp2",
+            "request": "launch",
+            "mainClass": "invhp2",
+            "projectName": "Java Tutorials & Codes_f681357b"
+        },
+        {
+            "type": "java",
+            "name": "solid_rect",
+            "request": "launch",
+            "mainClass": "solid_rect",
+            "projectName": "Java Tutorials & Codes_f681357b"
+        },
+        {
+            "type": "java",
+            "name": "product",
+            "request": "launch",
+            "mainClass": "functions.product",
+            "projectName": "Java Tutorials & Codes_f681357b"
+        },
+        {
+            "type": "java",
+            "name": "sum",
+            "request": "launch",
+            "mainClass": "functions.sum",
+            "projectName": "Java Tutorials & Codes_f681357b"
+        },
+        {
+            "type": "java",
+            "name": "WrapperClass",
+            "request": "launch",
+            "mainClass": "WrapperClass",
+            "projectName": "Java Tutorials & Codes_f681357b"
+        },
+        {
+            "type": "java",
+            "name": "SpiralMatrix",
+            "request": "launch",
+            "mainClass": "SpiralMatrix",
+            "projectName": "Java Tutorials & Codes_f681357b"
+        },
+        {
+            "type": "java",
             "name": "searchingAnElement",
             "request": "launch",
             "mainClass": "searchingAnElement",

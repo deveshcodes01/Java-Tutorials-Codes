@@ -1,5 +1,5 @@
 package Recursion;
-
+// sum of numbers using recursion
 public class R3 {
     public static void printSum(int n,int sum){
         if(n==0)

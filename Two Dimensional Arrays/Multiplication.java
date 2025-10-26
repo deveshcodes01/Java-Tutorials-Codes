@@ -41,14 +41,14 @@ public class Multiplication {
         int r1 = sc.nextInt();
         System.out.println("enter number of columns");
         int c1 = sc.nextInt();
-        int[][] a = new int[r1][c1]; // total=r*c
+        int a[][] = new int[r1][c1]; // total=r*c
         System.out.println("Enter matrix values");
         for (int i = 0; i < r1; i++) {
             for (int j = 0; j < c1; j++) {
                 a[i][j] = sc.nextInt();
             }
         }
-        System.out.println("enter number of rows and cloumns");
+        System.out.println("enter number of rows and columns");
         int r2 = sc.nextInt();
         int c2 = sc.nextInt();
         int[][] b = new int[r2][c2];
