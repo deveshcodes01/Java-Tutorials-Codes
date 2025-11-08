@@ -6,20 +6,6 @@
     "configurations": [
         {
             "type": "java",
-            "name": "ToggleCharacters",
-            "request": "launch",
-            "mainClass": "ToggleCharacters",
-            "projectName": "Java Tutorials & Codes_f681357b"
-        },
-        {
-            "type": "java",
-            "name": "SubStringStrings",
-            "request": "launch",
-            "mainClass": "SubStringStrings",
-            "projectName": "Java Tutorials & Codes_f681357b"
-        },
-        {
-            "type": "java",
             "name": "frequentchar",
             "request": "launch",
             "mainClass": "frequentchar",

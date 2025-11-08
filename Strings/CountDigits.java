@@ -1,10 +1,11 @@
 import java.util.Scanner;
 
-public class declare {
+public class CountDigits {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        String name = "Tony";
-        System.out.println("Enter your name: " + name);
+        double n = sc.nextDouble();
+        String s = "" + n;
+        System.out.println(s.length());
         sc.close();
     }
 }

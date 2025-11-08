@@ -22,5 +22,22 @@ public class LinearSearch {
         } else {
             System.out.println("Not Found");
         }
+         
+
+        // ---OLD SCHOOL APPROACH---
+        // int pos = -1;
+        // for(int i=0;i<a.length;i++)
+        // {
+        //     if (a[i] == target) {
+        //         pos=i;
+        //         break;
+        //     }
+        // }
+        // if (pos == -1) {
+        //     System.out.println("search unsuccessful");
+        // }
+        // else{
+        //     System.out.println("element found at "+(pos+1));
+        // }
     }
 }
