@@ -3,7 +3,8 @@ import java.util.Scanner;
 public class ToggleCharacters {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        StringBuilder str = new StringBuilder(sc.nextLine());
+        // StringBuilder str = new StringBuilder(sc.nextLine());
+        String str = "PhYSiCs";
         System.out.println(str);
         // toggle
         // PHysiCs -> phYSIcS
@@ -22,13 +23,16 @@ public class ToggleCharacters {
             if (flag == true) {
                 ascii += 32;
                 char dh = (char) ascii; // a
-                str.setCharAt(i, dh);
+                // str.setCharAt(i, dh);
+                str = str.substring(0, i) + dh + str.substring(i + 1);
             } else { // small
                 ascii -= 32;
                 char dh = (char) ascii;
-                str.setCharAt(i, dh);
+                str = str.substring(0, i) + dh + str.substring(i + 1);
+                // str.setCharAt(i, dh);
             }
         }
         System.out.println(str);
+        sc.close();
     }
 }

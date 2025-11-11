@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "RotateMat",
+            "request": "launch",
+            "mainClass": "RotateMat",
+            "projectName": "Java Tutorials & Codes_f681357b"
+        },
+        {
+            "type": "java",
+            "name": "half_pyramid_num",
+            "request": "launch",
+            "mainClass": "half_pyramid_num",
+            "projectName": "Java Tutorials & Codes_f681357b"
+        },
+        {
+            "type": "java",
+            "name": "Floyds_triangle",
+            "request": "launch",
+            "mainClass": "Floyds_triangle",
+            "projectName": "Java Tutorials & Codes_f681357b"
+        },
+        {
+            "type": "java",
             "name": "ToggleCharacters",
             "request": "launch",
             "mainClass": "ToggleCharacters",
