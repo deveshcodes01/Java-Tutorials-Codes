@@ -1,5 +1,5 @@
 // package Advanced Recursion;
- 
+
 public class SortedArrayCheck {
     public static boolean isSorted(int arr[], int idx) {
         if (idx == arr.length - 1) {
@@ -12,9 +12,9 @@ public class SortedArrayCheck {
             return false;
         }
     }
-    public static void main(String args[])
-    {
-        int arr[]={1,3,5};
-        System.out.println(isSorted(arr,0));
+
+    public static void main(String args[]) {
+        int arr[] = { 1, 3, 5 };
+        System.out.println(isSorted(arr, 0));
     }
 }
