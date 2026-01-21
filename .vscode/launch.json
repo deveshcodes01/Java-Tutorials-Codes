@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "FunctionCallingItself",
+            "request": "launch",
+            "mainClass": "Recursion.FunctionCallingItself",
+            "projectName": "Java Tutorials & Codes_f681357b"
+        },
+        {
+            "type": "java",
             "name": "RotateMat",
             "request": "launch",
             "mainClass": "RotateMat",
