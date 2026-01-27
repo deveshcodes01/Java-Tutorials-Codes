@@ -1,0 +1,27 @@
+ARRAY LIMITATIONS
+1. Fixed size
+2. Continuous memory locations
+3. Hard to add/delete element in middle
+
+IDEA OF LINKED LIST
+
+1. The Node: The basic unit. Each Node object contains a piece of Data and a Next reference (pointer) to the following node.
+
+2. Head & Tail: The Head is the starting point. If the head is null, the list is empty. The last node points to null, signaling the end.
+
+3. Dynamic Memory: Unlike arrays, they don't need a fixed size. They grow on the fly, using memory only when a new node is created.
+
+4. Sequential Access: You cannot "jump" to index 5. You must start at the Head and traverse (walk) node-by-node, making lookups slower than arrays.
+
+5. Fast Edits: Inserting or deleting is as simple as changing where a node's "Next" pointer points. No shifting of other elements is required
+
+Feature,Array,Linked List
+Storage,Contiguous memory locations,Random memory (linked by pointers)
+
+Size,Fixed (Static) or Resizable (Dynamic),Dynamic (grows/shrinks easily)
+
+Access Time,O(1) - Fast (Random access),O(n) - Slow (Must traverse)
+
+Insertion/Deletion,O(n) - Slow (Requires shifting),O(1) - Fast (If position is known)
+
+Memory Waste,Low (if sized correctly),Higher (due to extra pointer storage)
