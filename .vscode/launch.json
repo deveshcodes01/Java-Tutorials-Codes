@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "doublyLL",
+            "request": "launch",
+            "mainClass": "doublyLL",
+            "projectName": "Java Tutorials & Codes_f681357b"
+        },
+        {
+            "type": "java",
+            "name": "PrefixSumApproach",
+            "request": "launch",
+            "mainClass": "PrefixSumApproach",
+            "projectName": "Java Tutorials & Codes_f681357b"
+        },
+        {
+            "type": "java",
             "name": "Anagram",
             "request": "launch",
             "mainClass": "Anagram",

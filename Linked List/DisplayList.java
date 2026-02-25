@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 class Node {
     int val;
     Node next;
@@ -8,6 +10,20 @@ class Node {
 }
 
 public class DisplayList {
+    public static void displayRec(Node head) {
+        if (head == null)
+            return;
+        System.out.println(head.val + " ");
+        displayRec(head.next);
+    }
+    // --PRINTING A LL IN REVERSE--
+    // public static void displayRec(Node head)
+    // {
+    // if(head == null)return;
+    // displayRec(head.next);
+    // System.out.println(head.val+" ");
+
+    // }
     public static void display(Node head) { // BY USING WHILE LOOP (MAJORLY WE WILL USE WHILE LOOP)
         Node temp = head;
         while (temp != null) {
@@ -23,7 +39,8 @@ public class DisplayList {
     // System.out.println(temp.val+" ");
     // }
     public static void main(String[] args) {
-        Node a = new Node(10); // head node
+        Scanner sc = new Scanner(System.in);
+        Node a = new Node(sc.nextInt()); // head node
         Node b = new Node(200);
         Node c = new Node(30);
         Node d = new Node(40);
@@ -35,6 +52,19 @@ public class DisplayList {
         c.next = d;
         d.next = e;
         e.next = f;
-        display(a);
+        // display(a);
+        displayRec(a);
+
+        // private static int get(Node head,int idx)
+        // {
+        // Node temp = head;
+        // for(int i=1;i<=idx;i++)
+        // {
+        // temp=temp.next;
+        // }
+        // return temp.val;
+
+        // }
+        sc.close();
     }
 }

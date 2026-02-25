@@ -2,7 +2,7 @@ class Node {
     int val;
     Node next; // null
 
-    Node(int val) {
+    Node(int val) { // constructor to store value of val
         this.val = val;
     }
 }
