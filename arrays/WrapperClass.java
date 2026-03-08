@@ -48,7 +48,7 @@ public class WrapperClass {
         System.out.println(ans);
 
         // if you dont specify class, you can put anything inside
-        ArrayList l = new ArrayList();
+        ArrayList<Comparable> l = new ArrayList<>();
         l.add("pqres");
         l.add(1);
         l.add(true);

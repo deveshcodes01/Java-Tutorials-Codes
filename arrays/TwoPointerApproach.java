@@ -73,7 +73,7 @@ public class TwoPointerApproach {
         }
         // int n=arr.length;
         // int zeros=0;
-        // // count number of zeroes
+        // count number of zeroes
         // for(int i=0;i<n;i++)
         // {
         // if(arr[i]==0)
@@ -81,7 +81,7 @@ public class TwoPointerApproach {
         // zeros++;
         // }
         // }
-        // // 0 to zeros-1:0,zeros to n-1:1
+        // 0 to zeros-1:0,zeros to n-1:1
         // for(int i=0;i<n;i++)
         // {
         // if(i<zeros)
