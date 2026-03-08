@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Polymorphism",
+            "request": "launch",
+            "mainClass": "Polymorphism",
+            "projectName": "Java Tutorials & Codes_f681357b"
+        },
+        {
+            "type": "java",
+            "name": "UserDefinedDataType",
+            "request": "launch",
+            "mainClass": "UserDefinedDataType",
+            "projectName": "Java Tutorials & Codes_f681357b"
+        },
+        {
+            "type": "java",
+            "name": "BinarySearch",
+            "request": "launch",
+            "mainClass": "BinarySearch",
+            "projectName": "Java Tutorials & Codes_f681357b"
+        },
+        {
+            "type": "java",
             "name": "doublyLL",
             "request": "launch",
             "mainClass": "doublyLL",

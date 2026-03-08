@@ -1,12 +1,3 @@
-class Node {
-    int val;
-    Node next; // null
-
-    Node(int val) { // constructor to store value of val
-        this.val = val;
-    }
-}
-
 public class NodeOfLinkedList {
     public static void main(String[] args) {
         // 10 20 30 40 50

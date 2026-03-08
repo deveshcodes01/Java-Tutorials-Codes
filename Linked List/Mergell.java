@@ -1,16 +1,5 @@
 // MERGE SORT FOR LINKED LIST
 
-// Node is defined as
-class Node {
-    int val;
-    Node next;
-
-    Node(int d) {
-        val = d;
-        next = null;
-    }
-}
-
 public class Mergell {
     public Node mergeSort(Node head) {
         if (head.next == null)

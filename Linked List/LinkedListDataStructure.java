@@ -1,12 +1,3 @@
-class Node { // user defined data type
-    int val;
-    Node next; // null
-
-    Node(int val) {
-        this.val = val;
-    }
-}
-
 class LinkedList {
     // user defined data structure
     Node head; // null
