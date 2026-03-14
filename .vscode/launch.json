@@ -6,6 +6,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "RevisionOOPS",
+            "request": "launch",
+            "mainClass": "RevisionOOPS",
+            "projectName": "Java Tutorials & Codes_f681357b"
+        },
+        {
+            "type": "java",
+            "name": "PassingClassesToMethods",
+            "request": "launch",
+            "mainClass": "PassingClassesToMethods",
+            "projectName": "Java Tutorials & Codes_f681357b"
+        },
+        {
+            "type": "java",
+            "name": "Marks",
+            "request": "launch",
+            "mainClass": "Marks",
+            "projectName": "Java Tutorials & Codes_f681357b"
+        },
+        {
+            "type": "java",
+            "name": "Constructors",
+            "request": "launch",
+            "mainClass": "Constructors",
+            "projectName": "Java Tutorials & Codes_f681357b"
+        },
+        {
+            "type": "java",
+            "name": "PrivateKeyword",
+            "request": "launch",
+            "mainClass": "PrivateKeyword",
+            "projectName": "Java Tutorials & Codes_f681357b"
+        },
+        {
+            "type": "java",
             "name": "Polymorphism",
             "request": "launch",
             "mainClass": "Polymorphism",
