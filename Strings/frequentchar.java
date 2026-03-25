@@ -20,7 +20,7 @@ public class frequentchar {
         return ans;
 
 
-        // // ---SLIDING WINDOW TECHNIQUE---
+        // ---SLIDING WINDOW TECHNIQUE---
         // int maxFreq = -1;
         // char ans = s.charAt(0);
         // char[] arr = s.toCharArray();

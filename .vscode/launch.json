@@ -6,6 +6,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "LLImplementationOfStack",
+            "request": "launch",
+            "mainClass": "LLImplementationOfStack",
+            "projectName": "Java Tutorials & Codes_f681357b"
+        },
+        {
+            "type": "java",
+            "name": "PushAtBottom",
+            "request": "launch",
+            "mainClass": "PushAtBottom",
+            "projectName": "Java Tutorials & Codes_f681357b"
+        },
+        {
+            "type": "java",
+            "name": "FractionClass",
+            "request": "launch",
+            "mainClass": "FractionClass",
+            "projectName": "Java Tutorials & Codes_f681357b"
+        },
+        {
+            "type": "java",
+            "name": "ComplexNumberClass",
+            "request": "launch",
+            "mainClass": "ComplexNumberClass",
+            "projectName": "Java Tutorials & Codes_f681357b"
+        },
+        {
+            "type": "java",
+            "name": "FinalAndStatic",
+            "request": "launch",
+            "mainClass": "FinalAndStatic",
+            "projectName": "Java Tutorials & Codes_f681357b"
+        },
+        {
+            "type": "java",
             "name": "RevisionOOPS",
             "request": "launch",
             "mainClass": "RevisionOOPS",

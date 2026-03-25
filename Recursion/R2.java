@@ -17,12 +17,12 @@ public class R2 {
 
     // -----METHOD 3-----
     // public static void printNumb(int n) {
-    //     if (n == 0) {
-    //         return;
-    //     }
-    //     System.out.print(n + " ");
-    //     printNumb(n - 1);
-    //     if(n!=1)System.out.print(n + " ");
+    // if (n == 0) {
+    // return;
+    // }
+    // System.out.print(n + " ");
+    // printNumb(n - 1);
+    // if(n!=1)System.out.print(n + " ");
     // }
     // -----METHOD 1-----
     // public static void printNumb(int x) {
@@ -33,11 +33,11 @@ public class R2 {
     // printNumb(x + 1);
     // }
     // ------METHOD 2-----
-    public static void printNumb(int x,int n) {
-    if (x > n) { // stopping condition
-    return;
-    }
-    System.out.print(x+" ");
-    printNumb(x + 1,n);
+    public static void printNumb(int x, int n) {
+        if (x > n) { // stopping condition
+            return;
+        }
+        System.out.print(x + " ");
+        printNumb(x + 1, n);
     }
 }

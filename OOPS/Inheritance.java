@@ -77,9 +77,9 @@ class Cat extends Animal {
 //         mark.eat();
 //     }
 // }
-// // class Animal{
+// class Animal{
 
-// // }
+// }
 // class Animal{
 //     String FoodType;
 //     Animal(String FoodType)
@@ -87,20 +87,20 @@ class Cat extends Animal {
 //         System.out.println("base class constructor");
 //         this.FoodType=FoodType;
 //     }
-// //     Animal(){
-// //         System.out.println("base class construvtor");
-// //     }
-// //         void eat()
-// //     {
-// //         System.out.println("this animal eats");
-// //     }
+//     Animal(){
+//         System.out.println("base class construvtor");
+//     }
+//         void eat()
+//     {
+//         System.out.println("this animal eats");
+//     }
 // }
 // class Dog extends Animal{
 //     String name;
-//     // void bark()
-//     // {
-//     //     System.out.println("dog barks");
-//     // }
+    // void bark()
+    // {
+    //     System.out.println("dog barks");
+    // }
 
 //       Dog(String name)
 //        {
