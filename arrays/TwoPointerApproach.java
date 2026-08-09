@@ -43,7 +43,7 @@ public class TwoPointerApproach {
     //             left++;
     //             right--;
     //         }
-    //         if (arr[left] == 0) {
+    //         if (arr[left] == 1) {
     //             left++;
     //         }
     //         if (arr[right] == 0) {

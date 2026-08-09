@@ -19,7 +19,7 @@ class MyStack {
         return head.val;
     }
 
-    int pop() { // deleteAtHead
+    int pop() { // * deleteAtHead
         if (head == null) {
             System.out.println("stack is empty");
             return -1;
@@ -30,7 +30,7 @@ class MyStack {
         return x;
     }
 
-    void push(int ele) { // addAtHead
+    void push(int ele) { // * addAtHead
         Node temp = new Node(ele);
         if (len == 0)
             head = temp;

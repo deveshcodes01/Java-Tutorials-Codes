@@ -1,0 +1,420 @@
+/*
+===============================================================================
+                      DSA HANDBOOK - CHAPTER 3
+                    VARIABLE SLIDING WINDOW
+===============================================================================
+
+Author : Devesh's DSA Handbook
+Language : Java
+Pattern : Variable Sliding Window
+
+===============================================================================
+1. WHAT IS VARIABLE SLIDING WINDOW?
+===============================================================================
+
+Unlike Fixed Window,
+
+the window SIZE CHANGES.
+
+Sometimes it expands.
+
+Sometimes it shrinks.
+
+Example
+
+Expand
+
+A B C D
+
+Shrink
+
+B C D
+
+Expand
+
+B C D E
+
+Window size is NOT fixed.
+
+===============================================================================
+2. WHEN SHOULD I THINK OF THIS?
+===============================================================================
+
+Keywords
+
+✓ Longest
+
+✓ Smallest
+
+✓ At most
+
+✓ At least
+
+✓ No more than
+
+✓ Distinct
+
+✓ Consecutive
+
+✓ Substring
+
+✓ Subarray
+
+If the question asks
+
+Longest or Smallest
+
+Think
+
+VARIABLE SLIDING WINDOW
+
+===============================================================================
+3. CORE IDEA
+===============================================================================
+
+Expand
+
+↓
+
+If window becomes invalid
+
+↓
+
+Shrink
+
+↓
+
+Repeat
+
+===============================================================================
+4. UNIVERSAL TEMPLATE
+===============================================================================
+
+int left=0;
+
+for(int right=0;right<n;right++){
+
+    // include nums[right]
+
+    while(window is invalid){
+
+        // remove nums[left]
+
+        left++;
+    }
+
+    answer=Math.max(answer,
+                    right-left+1);
+}
+
+This template solves many interview questions.
+
+===============================================================================
+5. MENTAL MODEL
+===============================================================================
+
+Imagine stretching a rubber band.
+
+Expand
+
+Expand
+
+Expand
+
+Too much
+
+Shrink
+
+Expand again
+
+===============================================================================
+6. EXAMPLE
+Longest Substring Without Repeating Characters
+===============================================================================
+
+abcabcbb
+
+Expand
+
+a
+
+ab
+
+abc
+
+Next
+
+a
+
+Duplicate
+
+Shrink
+
+Now continue.
+
+Window always contains
+
+UNIQUE characters.
+
+===============================================================================
+7. JAVA TEMPLATE USING HASHMAP
+===============================================================================
+
+HashMap<Character,Integer> map=new HashMap<>();
+
+int left=0;
+
+for(int right=0;right<s.length();right++){
+
+    map.put(s.charAt(right),
+            map.getOrDefault(s.charAt(right),0)+1);
+
+    while(window invalid){
+
+        map.put(s.charAt(left),
+                map.get(s.charAt(left))-1);
+
+        if(map.get(s.charAt(left))==0)
+
+            map.remove(s.charAt(left));
+
+        left++;
+    }
+
+    answer=Math.max(answer,
+                    right-left+1);
+}
+
+===============================================================================
+8. HOW TO DECIDE WINDOW INVALID?
+===============================================================================
+
+Depends on the problem.
+
+Examples
+
+Longest Unique Substring
+
+Duplicate exists
+
+--------------------------------
+
+At Most K Distinct
+
+Distinct > K
+
+--------------------------------
+
+Character Replacement
+
+Replacement Needed > K
+
+--------------------------------
+
+Max Consecutive Ones
+
+Zeros > K
+
+Each problem changes ONLY this condition.
+
+Everything else remains almost identical.
+
+===============================================================================
+9. COMMON MISTAKES
+===============================================================================
+
+❌ Forgetting while()
+
+Using if()
+
+Window may still be invalid.
+
+--------------------------------
+
+❌ Forgetting to remove left frequency
+
+--------------------------------
+
+❌ Updating answer before shrinking
+
+Always make window valid FIRST.
+
+===============================================================================
+10. TIME COMPLEXITY
+===============================================================================
+
+Although
+
+while()
+
+exists,
+
+Time is still
+
+O(n)
+
+Reason
+
+Every character enters window once.
+
+Every character leaves window once.
+
+===============================================================================
+11. QUESTIONS THAT USE THIS TEMPLATE
+===============================================================================
+
+Longest Substring Without Repeating Characters
+
+--------------------------------
+
+Fruit Into Baskets
+
+--------------------------------
+
+Longest Repeating Character Replacement
+
+--------------------------------
+
+Maximum Consecutive Ones III
+
+--------------------------------
+
+Minimum Window Substring
+
+--------------------------------
+
+Longest Substring with At Most K Distinct Characters
+
+===============================================================================
+12. INTERVIEW CHECKLIST
+===============================================================================
+
+Longest?
+
+↓
+
+Variable Window
+
+----------------------------
+
+Smallest?
+
+↓
+
+Variable Window
+
+----------------------------
+
+Need HashMap?
+
+↓
+
+Characters
+
+----------------------------
+
+Need Frequency Array?
+
+↓
+
+Only lowercase/uppercase letters
+
+===============================================================================
+13. GOLDEN RULE
+===============================================================================
+
+Expand aggressively.
+
+Shrink only when necessary.
+
+Window must always become valid
+before updating the answer.
+
+===============================================================================
+14. FIXED vs VARIABLE
+===============================================================================
+
+FIXED WINDOW
+
+Window size
+
+Always K
+
+--------------------------------
+
+VARIABLE WINDOW
+
+Window size
+
+Changes dynamically
+
+--------------------------------
+
+FIXED
+
+Exactly K
+
+--------------------------------
+
+VARIABLE
+
+Longest
+
+Smallest
+
+At Most
+
+At Least
+
+Distinct
+
+Substring
+
+===============================================================================
+15. 30 SECOND REVISION
+===============================================================================
+
+Purpose
+
+Longest/Shortest Subarray or Substring
+
+--------------------------------
+
+Expand
+
+Always
+
+--------------------------------
+
+Shrink
+
+Only when invalid
+
+--------------------------------
+
+Update answer
+
+Only after window becomes valid
+
+--------------------------------
+
+Time
+
+O(n)
+
+--------------------------------
+
+Golden Rule
+
+Expand
+
+Validate
+
+Shrink
+
+Repeat
+
+===============================================================================
+END OF CHAPTER 3
+===============================================================================
+*/

@@ -17,7 +17,7 @@ public class PalindromeLL {
                 return false;
             } else {
                 i++;
-                j++;
+                j--;
             }
         }
         return true;

@@ -1,19 +1,19 @@
 import java.util.List;
 
 public class MergeKsortedList {
-    Node mergeKLists(List<Node> arr)
-    {
-        while (arr.size()>1) {
-            Node a=arr.get(arr.size()-1);
-            arr.remove(arr.size()-1);
-            Node b=arr.get(arr.size()-1);
-            arr.remove(arr.size()-1);
-            Node c=merge(a,b);
+    Node mergeKLists(List<Node> arr) {
+        while (arr.size() > 1) {
+            Node a = arr.get(arr.size() - 1);
+            arr.remove(arr.size() - 1);
+            Node b = arr.get(arr.size() - 1);
+            arr.remove(arr.size() - 1);
+            Node c = merge(a, b);
             arr.add(c);
         }
         return arr.get(0);
- 
+
     }
+
     static Node merge(Node head1, Node head2) {
         Node i = head1;
         Node j = head2;

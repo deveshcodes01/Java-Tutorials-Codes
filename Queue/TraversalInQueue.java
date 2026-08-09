@@ -64,7 +64,6 @@ public class TraversalInQueue {
         if (idx < 0 || idx >= q.size()) {
             System.out.println("Invalid Index");
             return -1;
-
         }
         int n = q.size();
         int val = -1;

@@ -1,5 +1,5 @@
 public class BinarySearch {
-    
+
     static boolean binarySearch(int[] a, int target) {
         int n = a.length;
         int start = 0, end = n - 1;
@@ -15,9 +15,9 @@ public class BinarySearch {
         }
         return false;
     }
-    static boolean recBinarySearch(int[] a, int start,int end,int target){
-        if(start > end)
-        {
+
+    static boolean recBinarySearch(int[] a, int start, int end, int target) {
+        if (start > end) {
             return false;
         }
         int mid = start + (end - start) / 2;
@@ -29,11 +29,12 @@ public class BinarySearch {
             return recBinarySearch(a, mid + 1, end, target);
         }
     }
+
     public static void main(String[] args) {
         int[] a = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
         int target = 4;
         while (target != 10) {
-            System.out.printf("%d exists in array %b: \n",target, binarySearch(a, target));
+            System.out.printf("%d exists in array %b: \n", target, binarySearch(a, target));
             target++;
         }
         // System.out.println(binarySearch(a, target));

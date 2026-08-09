@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "FloydsDetectionCycle",
+            "request": "launch",
+            "mainClass": "FloydsDetectionCycle",
+            "projectName": "Java Tutorials & Codes_f681357b"
+        },
+        {
+            "type": "java",
+            "name": "Maps_STL",
+            "request": "launch",
+            "mainClass": "Maps_and_Sets.Maps_STL",
+            "projectName": "Java Tutorials & Codes_f681357b"
+        },
+        {
+            "type": "java",
+            "name": "Implementation",
+            "request": "launch",
+            "mainClass": "BinaryTrees.Implementation",
+            "projectName": "Java Tutorials & Codes_f681357b"
+        },
+        {
+            "type": "java",
+            "name": "CircularArray",
+            "request": "launch",
+            "mainClass": "Queue.CircularArray",
+            "projectName": "Java Tutorials & Codes_f681357b"
+        },
+        {
+            "type": "java",
             "name": "LLImplementationOfQueue",
             "request": "launch",
             "mainClass": "Queue.LLImplementationOfQueue",

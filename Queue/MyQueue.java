@@ -8,7 +8,7 @@ class Node {
     }
 }
 public class MyQueue {
-     Node head;
+    Node head;
     Node tail;
     int size;
 
