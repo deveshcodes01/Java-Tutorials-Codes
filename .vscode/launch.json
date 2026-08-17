@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "threeSum",
+            "request": "launch",
+            "mainClass": "Maps_and_Sets.threeSum",
+            "projectName": "Java Tutorials & Codes_f681357b"
+        },
+        {
+            "type": "java",
             "name": "FloydsDetectionCycle",
             "request": "launch",
             "mainClass": "FloydsDetectionCycle",

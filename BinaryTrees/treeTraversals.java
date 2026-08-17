@@ -59,8 +59,8 @@ public class treeTraversals {
         }
     }
 
-// Traversal | Logic | Time Complexity | Space Complexity
-// Pre-order | Root → Left → Right | O(n) | O(h)
-// In-order | Left → Root → Right | O(n) | O(h)
-// Post-order | Left → Right → Root | O(n) | O(h)
+    // Traversal | Logic | Time Complexity | Space Complexity
+    // Pre-order | Root → Left → Right | O(n) | O(h)
+    // In-order | Left → Root → Right | O(n) | O(h)
+    // Post-order | Left → Right → Root | O(n) | O(h)
 }

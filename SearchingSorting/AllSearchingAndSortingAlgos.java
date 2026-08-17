@@ -46,7 +46,8 @@ public class AllSearchingAndSortingAlgos {
     // --- 3. MERGE SORT (Conquer/Merge) ---
     // This method merges two sorted halves
     /**
-     * This is the main recursive function for Merge Sort, implementing the "divide" part.
+     * This is the main recursive function for Merge Sort, implementing the "divide"
+     * part.
      * It recursively splits the array into two halves.
      *
      * @param arr The array to be sorted.
@@ -65,7 +66,7 @@ public class AllSearchingAndSortingAlgos {
 
         // Recursively sort the left half (from si to mid).
         divide(arr, si, mid);
-        
+
         // Recursively sort the right half (from mid + 1 to ei).
         divide(arr, mid + 1, ei);
 
@@ -75,7 +76,8 @@ public class AllSearchingAndSortingAlgos {
 
     /**
      * This function implements the "conquer" part of Merge Sort.
-     * It merges two sorted subarrays (left and right) into a single sorted subarray.
+     * It merges two sorted subarrays (left and right) into a single sorted
+     * subarray.
      *
      * @param arr The original array containing the subarrays.
      * @param si  The starting index of the left subarray.
@@ -88,9 +90,9 @@ public class AllSearchingAndSortingAlgos {
         int merged[] = new int[ei - si + 1];
 
         // Pointers for the start of the left and right subarrays.
-        int idx1 = si;    // Pointer for the left subarray (si to mid)
+        int idx1 = si; // Pointer for the left subarray (si to mid)
         int idx2 = mid + 1; // Pointer for the right subarray (mid+1 to ei)
-        
+
         // Pointer for the temporary 'merged' array.
         int x = 0;
 
@@ -127,49 +129,45 @@ public class AllSearchingAndSortingAlgos {
         }
     }
 
-
     // --- 3. QUICK SORT () ---
-    public static void quickSort(int arr[],int low,int high)
-    {
-        if (low<high) {
-            int pi=partition(arr,low,high);
-            quickSort(arr, low, pi-1);
-            quickSort(arr, pi+1, high);
+    public static void quickSort(int arr[], int low, int high) {
+        if (low < high) {
+            int pi = partition(arr, low, high);
+            quickSort(arr, low, pi - 1);
+            quickSort(arr, pi + 1, high);
         }
     }
-    public static int partition(int arr[],int low,int high)
-    {
-        int pivot=arr[high];
-        int i=low-1;
-        for(int j=low;j<high;j++)
-        {
-            if (arr[j]<pivot) {
+
+    public static int partition(int arr[], int low, int high) {
+        int pivot = arr[high];
+        int i = low - 1;
+        for (int j = low; j < high; j++) {
+            if (arr[j] < pivot) {
                 i++;
-                int temp=arr[i];
-                arr[i]=arr[j];
-                arr[j]=temp;
+                int temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
             }
         }
         // swap with pivot
         i++;
-        int temp=arr[i];
-        arr[i]=arr[high];
-        arr[high]=temp;
+        int temp = arr[i];
+        arr[i] = arr[high];
+        arr[high] = temp;
         return i;
     }
     // ----FOR QUICK SORT---
     // public static void main(String[] args) {
-    //     int arr[]={7,8,3,1,2};
-    //     quickSort(arr, 0, arr.length-1);
-    //     for (int v : arr)System.out.print(v+" ");
-    //     System.out.println();
+    // int arr[]={7,8,3,1,2};
+    // quickSort(arr, 0, arr.length-1);
+    // for (int v : arr)System.out.print(v+" ");
+    // System.out.println();
     // }
 
-    // --- 4. LINEAR SEARCH  ---
-    static boolean search(int[] a,int n,int target,int idx)
-    {
+    // --- 4. LINEAR SEARCH ---
+    static boolean search(int[] a, int n, int target, int idx) {
         // base case
-        if (idx>=n) {
+        if (idx >= n) {
             return false;
         }
         // self work
@@ -177,15 +175,16 @@ public class AllSearchingAndSortingAlgos {
             return true;
         }
         // recursive work
-        return search(a, n, target, idx+1);
+        return search(a, n, target, idx + 1);
 
     }
+
     public static void main(String[] args) {
-        int[] a={1,2,4,6};
+        int[] a = { 1, 2, 4, 6 };
         int target = 4;
         if (search(a, a.length, target, 0)) {
             System.out.println("found");
-        }else{
+        } else {
             System.out.println("not found");
         }
     }
