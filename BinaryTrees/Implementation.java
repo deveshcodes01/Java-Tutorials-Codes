@@ -9,6 +9,7 @@ class Node {
     int val;
     Node left;
     Node right;
+    public Integer data;
 
     Node(int val) {
         this.val = val;
@@ -37,17 +38,47 @@ class Twin {
     }
 }
 
+class Quad {
+    int max;
+    int min;
+    int size;
+    int sum;
+
+    Quad(int max, int min, int size, int sum) {
+        this.max = max;
+        this.min = min;
+        this.size = size;
+        this.sum = sum;
+    }
+
+    void display() {
+        System.out.println(max + " " + min + " " + size + " " + sum);
+    }
+}
+
 public class Implementation {
+    public static Quad maxMinSizeSum(Node root) {
+        if (root == null) {
+            return new Quad(Integer.MIN_VALUE, Integer.MAX_VALUE, 0, 0);
+        }
+        Quad lst = maxMinSizeSum(root.left);
+        Quad rst = maxMinSizeSum(root.right);
+        int max = Math.max(root.val, Math.max(lst.max, rst.max));
+        int min = Math.min(root.val, Math.min(lst.min, rst.min));
+        int size = 1 + lst.size + rst.size;
+        int sum = root.val + lst.sum + rst.sum;
+        return new Quad(max, min, size, sum);
+    }
 
     public static void main(String[] args) {
 
         /*
-                 3
-               /   \
-              4     2
-             / \   / \
-           -1   1 6   9
-        */
+         * 3
+         * / \
+         * 4 2
+         * / \ / \
+         * -1 1 6 9
+         */
 
         Node a = new Node(3);
         Node b = new Node(4);
@@ -135,6 +166,8 @@ public class Implementation {
         } else {
             System.out.println("LCA does not exist.");
         }
+        maxMinSizeSum(a).display();
+
     }
 
     // ---------------------------------------------------------
@@ -274,8 +307,7 @@ public class Implementation {
         if (root == null) {
             return new Twin(
                     Integer.MIN_VALUE,
-                    Integer.MAX_VALUE
-            );
+                    Integer.MAX_VALUE);
         }
 
         Twin left = maxMin(root.left);
@@ -283,13 +315,11 @@ public class Implementation {
 
         int maximum = Math.max(
                 root.val,
-                Math.max(left.max, right.max)
-        );
+                Math.max(left.max, right.max));
 
         int minimum = Math.min(
                 root.val,
-                Math.min(left.min, right.min)
-        );
+                Math.min(left.min, right.min));
 
         return new Twin(maximum, minimum);
     }
@@ -308,8 +338,7 @@ public class Implementation {
 
         return Math.max(
                 root.val,
-                Math.max(leftMax, rightMax)
-        );
+                Math.max(leftMax, rightMax));
     }
 
     // ---------------------------------------------------------
@@ -323,8 +352,7 @@ public class Implementation {
 
         return 1 + Math.max(
                 levels(root.left),
-                levels(root.right)
-        );
+                levels(root.right));
     }
 
     // ---------------------------------------------------------
