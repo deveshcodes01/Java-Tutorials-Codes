@@ -26,4 +26,5 @@ public class NextGreaterElement {
     }
 }
 
-// continue studying from 4:37:36
+// TIME COMPLEXITY-O(n)
+// SPACE COMPLEXITY-O(n)

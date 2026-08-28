@@ -2,19 +2,34 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class IsomorphicStrings {
-    public static boolean areIsomorphic(String s1, String s2) {
+    public boolean isIsomorphic(String s1, String s2) {
+        if (s1.length() != s2.length()) {
+            return false;
+        }
+
         Map<Character, Integer> m1 = new HashMap<>();
         Map<Character, Integer> m2 = new HashMap<>();
+
         for (int i = 0; i < s1.length(); i++) {
-            if (!m1.containsKey(s1.charAt(i)))
-                m1.put(s1.charAt(i), i);
+            char c1 = s1.charAt(i);
+            char c2 = s2.charAt(i);
 
-            if (!m2.containsKey(s2.charAt(i)))
-                m2.put(s2.charAt(i), i);
+            // Record first occurrence index of each character
+            if (!m1.containsKey(c1)) {
+                m1.put(c1, i);
+            }
 
-            if (!m1.get(s1.charAt(i)).equals(m2.get(s2.charAt(i))))
+            if (!m2.containsKey(c2)) {
+                m2.put(c2, i);
+            }
+
+            // Compare their first appearance positions
+            if (!m1.get(c1).equals(m2.get(c2))) {
                 return false;
+            }
         }
-        return false;
+
+        return true; // Return true if all character positions matched
+
     }
 }

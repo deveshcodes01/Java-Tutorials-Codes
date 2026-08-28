@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "FruitsIntoBaskets2",
+            "request": "launch",
+            "mainClass": "Maps_and_Sets.FruitsIntoBaskets2",
+            "projectName": "Java Tutorials & Codes_f681357b"
+        },
+        {
+            "type": "java",
             "name": "threeSum",
             "request": "launch",
             "mainClass": "Maps_and_Sets.threeSum",

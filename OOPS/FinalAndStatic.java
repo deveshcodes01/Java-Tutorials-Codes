@@ -1,6 +1,6 @@
 class Cricketer {
     // final String country = "India";
-    static String country = "NZ";
+    String country = "NZ";
     int runs;
     String name;
     double avg;
