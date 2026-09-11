@@ -1,7 +1,7 @@
 package Recursion;
 
 // print numbers from 5 to 1 using recursion
-public class R1 {
+public class Nto1 {
     public static void printNumb(int n) {
         if (n == 0) {
             return;

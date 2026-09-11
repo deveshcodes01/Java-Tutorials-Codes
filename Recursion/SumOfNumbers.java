@@ -1,7 +1,7 @@
 package Recursion;
 
 // sum of numbers using recursion
-public class R3 {
+public class SumOfNumbers {
     public static void printSum(int n, int sum) {
         if (n == 0) {
             System.out.println(sum);

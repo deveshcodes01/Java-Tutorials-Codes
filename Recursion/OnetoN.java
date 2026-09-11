@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 // print numbers from 1 to n using recursion
 // This code prints numbers from 1 to n using recursion
-public class R2 {
+public class OnetoN {
     static int n;
 
     public static void main(String args[]) {

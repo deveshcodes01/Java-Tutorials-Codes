@@ -25,7 +25,7 @@ public class FruitsIntoBaskets2 {
     }
 
     public static void main(String[] args) {
-        int[] fruit = { 1,2,3,2,2 };
+        int[] fruit = { 1, 2, 3, 2, 2 };
         int ans = totalFruit(fruit);
         System.out.println("maximum fruits you can pick is " + ans);
 
